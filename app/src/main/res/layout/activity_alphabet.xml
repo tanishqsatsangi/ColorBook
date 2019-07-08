@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#446BA9"
+    android:orientation="vertical">
+
+    <com.android.hspl.hsplcolorbook.Common.TouchImageView
+        android:id="@+id/drawing_imgview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/menubtn"
+        android:layout_alignParentTop="true"
+        android:layout_margin="5dp"
+        android:contentDescription="Alphabet Image "
+        android:padding="1dp"
+        android:scaleType="fitXY" />
+
+
+    <nl.dionsegijn.konfetti.KonfettiView
+        android:id="@+id/viewKonfetti"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_alignParentTop="true" />
+
+    <LinearLayout
+        android:id="@+id/menubtn"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_above="@id/colorchooserbox"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:id="@+id/undo"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="10dp"
+            android:background="#446BA9"
+            android:scaleType="fitXY"
+            android:src="@drawable/undo_img" />
+
+        <ImageButton
+            android:id="@+id/reset"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="10dp"
+            android:background="#446BA9"
+            android:scaleType="fitXY"
+            android:src="@drawable/reset_img" />
+
+        <ImageButton
+            android:id="@+id/share"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="10dp"
+            android:background="#446BA9"
+            android:scaleType="fitXY"
+            android:src="@drawable/share_img" />
+
+    </LinearLayout>
+
+
+    <com.android.hspl.hsplcolorbook.Main.PaletteBar
+        android:id="@+id/colorchooserbox"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_above="@id/adview" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btn1"
+            android:layout_width="10dp"
+            android:layout_height="10dp" />
+
+        <Button
+            android:id="@+id/btn2"
+            android:layout_width="10dp"
+            android:layout_height="10dp" />
+
+        <Button
+            android:id="@+id/btn3"
+            android:layout_width="10dp"
+            android:layout_height="10dp" />
+
+        <Button
+            android:id="@+id/btn4"
+            android:layout_width="10dp"
+            android:layout_height="10dp" />
+
+        <Button
+            android:id="@+id/btn5"
+            android:layout_width="10dp"
+            android:layout_height="10dp" />
+
+        <Button
+            android:id="@+id/btn6"
+            android:layout_width="10dp"
+            android:layout_height="10dp" />
+
+    </LinearLayout>
+
+    <View
+        android:id="@+id/adview"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_alignParentBottom="true"
+        android:background="#999999" />
+
+
+</RelativeLayout>
